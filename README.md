@@ -11,7 +11,7 @@ They want to improve on their organizational layout, and improve on the aestheti
 
 ## Design Process
 - As a user who wants to find events, I want to have a good, organized layout for me to easily find events that i have an interest in.
-- 
+-
 
 ## Features
 
