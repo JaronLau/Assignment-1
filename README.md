@@ -3,9 +3,12 @@ S10256941 Jaron Lau Assignment 1
 
 # Revamp of Eventacular Caledar Singapore
 
-Eventacular Calendar Singapore is a website created by a group of Singaporean people who want to easily find all events and ongoings happening in singapore, ranging from national holidays, performances at the stadium, expos and various other events happening across the nation. 
+### External user's goal
+Users come to this website to find out all events and ongoings happening in Singapore, ranging from national holidays, performances at the stadium, expos and various other events happening across the nation. 
 
-They have their website set up, but are lacking in organizational and design elements. Therefore this revamp is to fix the their organizational layout, as well as improve on their design elements to make this website easier to navigate, and more pleasing to the eyes.
+### Site owners goal
+Theu want to improve on their organizational layout, and improve on the aesthetics of the website. Thiss is to allow users to navigae the website easliy and have access to a website that is pleasing to the eyes.
+
 
 ## Design Process
 
