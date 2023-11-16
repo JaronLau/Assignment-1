@@ -11,11 +11,12 @@ They want to improve on their organizational layout, and improve on the aestheti
 
 ## Design Process
 - As a user who wants to find events, I want to have a good, organized layout for me to easily find events that i have an interest in.
--
+- As an event organizer, I want people to easily find our event and its details to increase visitors to our event
 
 ## Features
 
 ### Existing Features
+- By having users search for 
 
 ### Features to Implement
 
@@ -30,7 +31,7 @@ They want to improve on their organizational layout, and improve on the aestheti
 ### Media
 
 ### Acknowledements 
-I recieved inspiration from ticketmaster, and my own desire to know events that are going on in Singapore, for example Anime Expo or Collaborations.
+I recieved inspiration from ticketmaster, TheHoneycombers Singapore, and my own desire to know events that are going on in Singapore, for example Anime Expo or Collaborations.
 
 
 
