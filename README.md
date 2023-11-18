@@ -16,13 +16,17 @@ They want to improve on their organizational layout, and improve on the aestheti
 ## Features
 
 ### Existing Features
-- By having users search for 
+- By having users scroll thorugh the available events listed on the page without organization, users trawl thorugh countless unrelated events to find interesting events that pique their interests.
 
 ### Features to Implement
+- Have events list event details like venue, category, times etc to allow users to know what type of event this is
+- Adds a category page, location search page, and a search bar
+- Allows users to search up events using event details to filter out unwanted events
 
 ## Technologies used
 
 ## Testing
+Wireframes are 
 
 ## Credits
 
@@ -31,7 +35,6 @@ They want to improve on their organizational layout, and improve on the aestheti
 ### Media
 
 ### Acknowledements 
-I recieved inspiration from ticketmaster, TheHoneycombers Singapore, and my own desire to know events that are going on in Singapore, for example Anime Expo or Collaborations.
 
 
 
