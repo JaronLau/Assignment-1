@@ -11,15 +11,24 @@
         <script src="script.js"></script>
         <header class="main-header">
             <div class="header-nav">
-                <nav>
-                    <a href="home.html"><img class="header-logo" src="./Images/Eventacular.png"></a>
+                <nav class="main-nav">
+                    <span class="nav-button" onclick="openNav()">open</span>
+                    <a href="index.html"><img class="header-logo" src="./Images/Eventacular.png"></a>
                     <li><a href="signin.html"><p class="header-signin">Sign in/Register</p></a></li>
                 </nav>                
             </div>
             <div class="sub-nav">
-                <a class="active" href="home.html">Events</a>
+                <a class="active" href="index.html">Events</a>
                 <a href="categories.html">Categories</a>
                 <a href="venues.html">Venues</a>               
+            </div>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
             </div>
             
         </header>
