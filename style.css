@@ -1,13 +1,66 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 /* homepage css*/
-/* header css */
-.nav-button .header-logo .header-signin{
-    display: inline-block;
-}
 
-.header-logo{
-    width: 200px;
+/* header css */
+section.headernav {
+  width:100%;
+  height:100px;
+  background: blue;
+  overflow: hidden;
 }
-/*side navigaiton bar*/
+.headernav .topbar ul{
+  list-style-type: none;
+  display: flex;
+  margin:0;
+}
+.headernav .subbar ul {
+  list-style-type: none;
+  overflow:hidden;
+  display: flex;
+  justify-content:space-evenly;
+  background-color: grey;
+}
+.topbar li img {
+  width:200px;
+  height:auto;
+}
+.ads{
+  width:100%;
+  height:240px;
+}
+.ads img {
+  width: 100%;
+  height: 240px;
+}
+.eventimage img {
+  width:400px;
+  height:180px;
+}
+/*sign in CSS*/
+/*
+section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  width: 100%;
+  background: grey;
+}
+.form-box{
+  position: relative;
+  width:400px;
+  height:450px;
+  background:red;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+*/
+/*side navigaiton bar
 .sidenav {
     height: 100%;
     width: 0;
@@ -41,36 +94,47 @@
     font-size: 36px;
     margin-left: 50px;
   }
-
+*/
 /* subnav CSS */
-.sub-nav {
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    text-align: center;
-    margin: auto;
-  }
-  
-  /* Style the topnav links */
-  .sub-nav a {
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .sub-nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
 
-/* */
-/* */
+
+
+
+/* footer css */
+.footerbanner {
+  width:100%;
+  height:150px;
+  background-color: black;
+  color:white;
+  justify-content:column;
+}
+.footerbanner .aboutus{
+  float:left;
+  width:50%;
+  height:100%;
+
+}
+.footerbanner .support {
+  float: right;
+  width:50%;
+  height:100%;
+  text-align: center;
+  justify-content:center;
+}
 /* */
 
+
+
+/*Categories css*/
+.catbox img{
+  width: 280px;
+  height:100px;
+}
+
+/*venues css*/
+.venuebox img {
+  width: 280px;
+  height: 100px;
+}
 
 
