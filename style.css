@@ -4,101 +4,212 @@
   box-sizing:border-box;
 }
 /* homepage css*/
-
 /* header css */
 section.headernav {
   width:100%;
   height:100px;
   background: blue;
   overflow: hidden;
+  z-index: 10;
 }
+.headercontainer {
+  height:100px;
+
+}
+.headercontainer .topbar {
+  height:60%;
+  justify-content:center;
+  align-content: center;
+}
+
 .headernav .topbar ul{
-  list-style-type: none;
-  display: flex;
-  margin:0;
-}
-.headernav .subbar ul {
+  height:100%;
   list-style-type: none;
   overflow:hidden;
   display: flex;
-  justify-content:space-evenly;
-  background-color: grey;
+  justify-content:space-between;
+  align-items: center;
 }
-.topbar li img {
-  width:200px;
-  height:auto;
+.topbar li {
+  float: left;
+  height:100%;
+  padding: 5px;
 }
+.topbar img {
+  justify-content: left;
+  width: 200px;
+  height: auto;
+  padding: 10px 5px 10px 5px;
+}
+.topbar .signinbutton{
+  text-align: right;
+  width: 80px;
+  height: auto;
+  padding: 15px 10px 15px 10px;
+  margin: 10px;
+}
+.subbar {
+  height:100%;
+  background: grey;
+  justify-content:center;
+  align-content: center;
+}
+.headercontainer .subbar {
+  height:40%;
+  width:100%;
+}
+.headernav .subbar ul {
+  height:100%;
+  list-style-type: none;
+  overflow:hidden;
+  display: flex;
+  justify-content:space-around;
+}
+.subbar li a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subbar li {
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.subbar li:hover {
+  background-color: white;
+}
+
+/*main page CSS*/
 .ads{
   width:100%;
-  height:240px;
+  height:200px;
 }
 .ads img {
   width: 100%;
-  height: 240px;
+  height: 200px;
+}
+
+.topevents h1 {
+  padding: 10px 5px 10px 20px;
+}
+.eventstoday .event{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
 }
 .eventimage img {
-  width:400px;
+  width:350px;
   height:180px;
 }
-/*sign in CSS*/
-/*
-section{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
+
+.recommend {
   width: 100%;
-  background: grey;
+  height:100%;
 }
-.form-box{
-  position: relative;
-  width:400px;
-  height:450px;
-  background:red;
-  display:flex;
-  justify-content:center;
+.recommendcontainer {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  padding: 0px 0px 20px 0px;
 }
-*/
-/*side navigaiton bar
-.sidenav {
-    height: 100%;
-    width: 0;
-    position:fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-*/
-/* subnav CSS */
+.recommend h2 {
+  padding: 10px 5px 10px 20px;
+}
+.recommendcontainer .recommendimage {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 20px 40px;
+}
+.recommendcontainer .recommendimage h5 {
+  padding: 2px;
+  word-break: break-all;
+}
+.recommendcontainer .recommendimage img {
+  width: 300px;
+  height: 130px;
+}
 
+/* Categories CSS*/
+.catmain{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px 20px 0px;
+}
 
+.catmain .searchbar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.catsearch {
+  padding:20px 40px 20px 40px ;
+}
 
+.venuesearch {
+  padding:20px 40px 20px 40px ;
+}
+.searchbartext{
+  display: flex;
+  width: 100%;
+}
+
+.catsearch .dropdown {
+  display: flex;
+}
+.catsearch .label {
+  width: 40%;
+}
+.catsearch .input {
+  width: 60%;
+}
+
+.venuesearch .dropdown {
+  display: flex;
+}
+.venuesearch .label {
+  width: 40%;
+}
+.venuesearch .input {
+  width: 60%;
+}
+
+.catcontainer {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.catcontainer .catbox {
+  padding:20px 20px 10px 20px;
+}
+.catbox img {
+  width: 300px;
+  height: 130px;
+}
+  
+/* events CSS*/
+.eventmain {
+  padding: 20px 40px 0px 40px;
+}
+
+.eventcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0px 20px 0px;
+}
+.eventcontainer .eventbox {
+  padding:20px 20px 10px 20px;
+}
+.eventbox img {
+  width: 300px;
+  height: 130px;
+}
 
 /* footer css */
 .footerbanner {
@@ -122,19 +233,5 @@ section{
   justify-content:center;
 }
 /* */
-
-
-
-/*Categories css*/
-.catbox img{
-  width: 280px;
-  height:100px;
-}
-
-/*venues css*/
-.venuebox img {
-  width: 280px;
-  height: 100px;
-}
 
 

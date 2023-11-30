@@ -13,91 +13,100 @@
             <header class="headercontainer">
                 <div class="topbar">
                     <ul>
-                        <li>side bar button</li>
                         <li><img src="./Images/Eventacular.png"></li>
-                        <li>Sign in</li>
+                        <li class="signinbutton">Sign in</li>
                     </ul>
                 </div>
                 <div class="subbar">
                     <ul>
-                        <li><a href=index.html>Events</a></li>
+                        <li><a href=index.html>Home</a></li>
                         <li><a href="categories.html">Categories</a></li>
-                        <li><a href="venues.html">Venues</a></li>
+                        <li><a href="events.html">Events</a></li>
                     </ul>
                 </div>
             </header>
         </section>
 
-        <section class="eventmain">
-            <div class="catsearch">
-                <h2>Search Categories by:</h2>
-                <h4>Name:</h4>
-                <h4>Tag</h4>
+        <section class="catmain">
+            <div class="searchbar">
+                <div class="catsearch">
+                    <h2>Search Categories by:</h2>
+                    <br>
+                    <form class="searchbartext">
+                        <label class="label" for="categoryname">Name:</label>
+                        <input class="input" type="text" id="categorynname" name="categoryname">
+                    </form>
+                    <br>
+                    <form class="dropdown">
+                        <label class="label" for="tag">Tag:</label>
+                        <select class="input" name="tag" id="tag">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="venuesearch">
+                    <h2>Search Location by:</h2>
+                    <br>
+                    <form class="searchbartext">
+                        <label class="label" for="locationname">Location:</label>
+                        <input class="input" type="text" id="locationname" name="locationname">
+                    </form>
+                    <br>
+                    <form class="dropdown">
+                        <label class="label" for="locationselect">Select location:</label>
+                        <select class="input" name="locationselect" id="locationselect">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </form>
+                </div>                
             </div>
+
             <div class="catcontainer">
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
                 <div class="catbox">
-                    <img src="./Images/placeholder.png">
+                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
                     <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
-                </div>
-                <div class="catbox">
-                    <img src="./Images/placeholder.png">
-                    <h5>category name</h5>
+                    <h6>No. events</h6>
                 </div>
             </div>
         </section>
