@@ -9,13 +9,23 @@
 
     <body>
         <script src="script.js"></script>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="./Images/Eventacular.png">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="events.html">Events</a>
+            <a href="#">Sign in/Register</a>
+        </div>
         <section class="headernav">
             <header class="headercontainer">
                 <div class="topbar">
                     <ul>
+                        <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span></li>
                         <li><img src="./Images/Eventacular.png"></li>
-                        <li class="signinbutton">Sign in</li>
+                        <li class="signinbutton"><a href="#">Sign in</a></li>
                     </ul>
+
                 </div>
                 <div class="subbar">
                     <ul>
@@ -24,23 +34,43 @@
                         <li><a href="events.html">Events</a></li>
                     </ul>
                 </div>
+
+                
             </header>
         </section>
 
         <section>
-            <div class="eventcontainerleft">
-                <div class="eventtitle">
-                    <h3>This title will correspond to whatever event you choose to view</h3>
+            <div class="individualcontainer"> 
+                <div class="individualimage">
+                    <div class="individualtitle">
+                        <h3>IVE Live @ Indoor Stadium</h3>
+                    </div>
+
+                    <div class="individualdetails">
+                        <div class="individualpicture">
+                            <img src="./Images/kpop 1.jpg">
+                        </div>
+                        <div class="individualtext">
+                            <div class="individualpara">
+                                <h4>
+                                    Live Nation Singapore is thrilled to announce that one of the fastest-growing K-Pop groups, 
+                                    IVE, have announced their first global outing – 1ST WORLD TOUR ‘SHOW WHAT I HAVE’. 
+                                    The 24-date world tour will hit various cities across Southeast Asia, North America, 
+                                    Europe, the U.K., South America, Eastern Asia and Australia next year. 
+                                    IVE THE 1ST WORLD TOUR <SHOW WHAT I HAVE> IN SINGAPORE will 
+                                    take place at Singapore Indoor Stadium on 24 February 2024.
+                                </h4>
+                            <div class="individualpara">
+                                <h5>K-pop, Live Concert, Tour, IVE, Indoor Stadium</h5>
+                            </div>
+                        </div>
+
+                    </div>  
                 </div>
-                <div class="eventpicture">
-                    <img src="./Images/placeholder.png">
-                </div>
-            </div>
-            <div class="eventdetails">
-                <h4>this is where the details paragraph of the event will be at</h4>
-                <h5>This is where the event tags will be put, set by organiser.</h5>
+  
             </div>
         </section>
+        <br>
 
         <footer class="footerbanner">
             <div class="aboutus">
@@ -53,18 +83,11 @@
             </div>
             <div class="support">
                 <ul>
-                    <li>Contact us</li>
-                    <li>FAQ</li>
-                    <li>Terms and Conditions</li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
         </footer>
-    
-
-
-
-
     </body>
-
-
 </html>

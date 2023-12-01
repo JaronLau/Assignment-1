@@ -23,18 +23,23 @@ They want to improve on their organizational layout, and improve on the aestheti
 - Adds a category page, location search page, and a search bar
 - Allows users to search up events using event details to filter out unwanted events
 
-## Technologies used
 
 ## Testing
-Wireframes are 
+On a desktop webpage, contents are aligned in rows and columns when specified.
+On a smaller screen like the Samsung S20 FE, most images and layouts are in columns
+
+when clicking on images to see event details, it is supposed to link to each individual event's details and shows specific images and content related to the desired event. however due to time constraint, I have only used IVE concert as a base prototype.
+
+in each individual details page, when the screen shrinks too much, text may clip into the footer bar. this depends on the length of text in the event details.
 
 ## Credits
-
 ### Content
-
+IVE event details are sourced from ticketmaster
 ### Media
-
+Images used in this prototype are sourced from ticketmaster @ https://ticketmaster.sg/
 ### Acknowledements 
+I recieved inspiration from TheHoneyCombers as a base idea on revamping an events website to find Singapore events easier.
+I then used Ticketmaster as a base reference on the designs and layouts
 
 
 

@@ -3,6 +3,9 @@
   padding:0;
   box-sizing:border-box;
 }
+img {
+  object-fit: cover;
+}
 /* homepage css*/
 /* header css */
 section.headernav {
@@ -10,7 +13,8 @@ section.headernav {
   height:100px;
   background: blue;
   overflow: hidden;
-  z-index: 10;
+  position: sticky;
+  top: 0;
 }
 .headercontainer {
   height:100px;
@@ -31,9 +35,15 @@ section.headernav {
   align-items: center;
 }
 .topbar li {
+  display:flex;
+  justify-content:center;
+  align-items: center;
   float: left;
   height:100%;
   padding: 5px;
+}
+.topbar span {
+  width: 80px;
 }
 .topbar img {
   justify-content: left;
@@ -47,6 +57,9 @@ section.headernav {
   height: auto;
   padding: 15px 10px 15px 10px;
   margin: 10px;
+}
+.topbar .signinbutton a{
+  color: black;
 }
 .subbar {
   height:100%;
@@ -82,14 +95,64 @@ section.headernav {
   background-color: white;
 }
 
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav img {
+  display: flex;
+  width:100%;
+  height: auto;
+  padding: 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
 /*main page CSS*/
 .ads{
   width:100%;
-  height:200px;
+  height:300px;
 }
 .ads img {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  object-fit:none;
 }
 
 .topevents h1 {
@@ -97,13 +160,18 @@ section.headernav {
 }
 .eventstoday .event{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
+  padding: 10px 10px 10px 10px;
+}
+.eventimage {
   padding: 10px 10px 10px 10px;
 }
 .eventimage img {
   width:350px;
   height:180px;
+  padding: 0px 0px 10px 0px;
 }
 
 .recommend {
@@ -211,6 +279,47 @@ section.headernav {
   height: 130px;
 }
 
+/*individual CSS*/
+.individualcontainer {
+  width: 100%;
+  height: 445px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.individualtitle {
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+.individualimage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+}
+.individualimage img {
+  width: 600px;
+  height:300px;
+  padding: 5px 20px 5px 20px
+}
+.individualdetails {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.individualtext {
+  width: 100%;
+  height: 100%;
+}
+.individualtext .individualpara {
+  padding: 20px 20px 20px 20px
+}
+
 /* footer css */
 .footerbanner {
   width:100%;
@@ -218,6 +327,11 @@ section.headernav {
   background-color: black;
   color:white;
   justify-content:column;
+  position: relative;
+  bottom: 0;
+}
+.footerbanner div {
+  padding: 10px 20px 10px 20px;
 }
 .footerbanner .aboutus{
   float:left;
@@ -225,13 +339,117 @@ section.headernav {
   height:100%;
 
 }
-.footerbanner .support {
+.support ul {
+  list-style-type: none;
   float: right;
   width:50%;
   height:100%;
   text-align: center;
   justify-content:center;
 }
+.footerbanner .support a {
+  color: white;
+}
+
+.footerbanner .support a:hover {
+  color: lightblue;
+}
 /* */
+
+@media screen and (max-width: 1100px) {
+  .ads {
+    width: 100%;
+    height: 200px;
+  }
+  .ads img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+
+  .catmain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .catmain .searchbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .catsearch {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .catcontainer {
+    width: 100%;
+  }
+  .catmain .searchbartext {
+    display: flex;
+    justify-content: center;
+  }
+
+  .individualcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .individualtitle {
+    display: flex;
+    justify-content: center;
+  }
+  .individualimage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .individualdetails {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+  }
+
+  .individualdetails .individualtext {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .individualdetails img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .footerbanner {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+  .footerbanner .aboutus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerbanner .support {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
 
 

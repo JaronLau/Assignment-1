@@ -4,18 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Eventacular Assignment 1</title>
+        <link href="normalise.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
         <script src="script.js"></script>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="./Images/Eventacular.png">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="events.html">Events</a>
+            <a href="#">Sign in/Register</a>
+        </div>
         <section class="headernav">
             <header class="headercontainer">
                 <div class="topbar">
                     <ul>
+                        <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span></li>
                         <li><img src="./Images/Eventacular.png"></li>
-                        <li class="signinbutton">Sign in</li>
+                        <li class="signinbutton"><a href="#">Sign in</a></li>
                     </ul>
+
                 </div>
                 <div class="subbar">
                     <ul>
@@ -24,34 +35,39 @@
                         <li><a href="events.html">Events</a></li>
                     </ul>
                 </div>
+
+                
             </header>
         </section>
 
         <div class="main-page">
             <section>
                 <div class="ads">
-                    <a href="individual.html"><img src="./Images/placeholder.png"></a>
+                    <div class="adsbanner">
+                        <div class="adsimage">
+                            <a href="individual.html"><img src="./Images/kpop 1.jpg"></a>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <br>
             <section class="topevents">
                 <h1>Top Events Today:</h1>
                 <div class="eventstoday">
                     <div class="event">
                         <div class="eventimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h4>Event details</h4>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/cny.jpg"></a>
+                            <h4>Chinese New Year @ MBS</h4>
+                            <h5>10 Feburary 2024</h5>
                         </div>
                         <div class="eventimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h4>Event details</h4>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/streetbeethoven.jpg"></a>
+                            <h4>Street Beethoven World Tour</h4>
+                            <h5>27 Feburary 2024</h5>
                         </div>
                         <div class="eventimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h4>Event details</h4>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/kpop 1.jpg"></a>
+                            <h4>IVE Live @ Indoor</h4>
+                            <h5>24 Feburary 2024</h5>
                         </div>
                     </div>
                 </div>
@@ -60,44 +76,35 @@
                     <h2>Events recommended to you:</h2>
                     <div class="recommendcontainer">
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event title </h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/staycconcert.jpg"></a>
+                            <h5>StayC World Tour</h5>
+                            <h5>16 Feburary 2024</h5>
                         </div>
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/music fes1.jpg"></a>
+                            <h5>ZonkOut Dance Music Festival</h5>
+                            <h5>2-3 December 2023</h5>
                         </div>
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/seguracomedy.jpg"></a>
+                            <h5>Tom Segura Stand-up Comedy</h5>
+                            <h5>10 January 2024</h5>
                         </div>
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/cny.jpg"></a>
+                            <h4>Chinese New Year @ MBS</h4>
+                            <h5>10 Feburary 2024</h5>
                         </div>
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/streetbeethoven.jpg"></a>
+                            <h4>Street Beethoven World Tour</h4>
+                            <h5>27 Feburary 2024</h5>
                         </div>
                         <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
+                            <a href="individual.html"><img src="./Images/kpop 1.jpg"></a>
+                            <h4>IVE Live @ Indoor</h4>
+                            <h5>24 Feburary 2024</h5>
                         </div>
-                        <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
-                        </div>
-                        <div class="recommendimage">
-                            <a href="individual.html"><img src="./Images/placeholder.png"></a>
-                            <h5>Event details</h5>
-                            <h5>Date</h5>
                         </div>
                     </div>
                 </div>
@@ -116,18 +123,11 @@
             </div>
             <div class="support">
                 <ul>
-                    <li>Contact us</li>
-                    <li>FAQ</li>
-                    <li>Terms and Conditions</li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
         </footer>
-    
-
-
-
-
     </body>
-
-
 </html>
